@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <h1>calculating age in js</h1>
+    <p id="wi"></p>  
+    <p id="ti"></p> 
+</body>
+<script>
+class human {
+    constructor(name, year) {
+        this.name = name;
+        this.year = year;
+    }
+    age(){
+        let date = new Date();
+        return date.getFullYear() - this.year;
+    }
+}
+wi = new human( "waseka." , 2010);
+document.getElementById("wi").innerHTML =
+" My name is " + wi.name + " I was born in " + wi.year + " my age is " + wi.age();
+
+ti = new human( "Taseen." , 2008);
+document.getElementById("ti").innerHTML =
+" My name is " + ti.name + " I was born in " + wi.year + " my age is " + wi.age();
+</script>
+</html>
