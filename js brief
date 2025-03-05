@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+  <h1>JS DATA TYPE CONVERSION</h1>  
+  <P ID="num.rsl"></P>
+  <P ID="str.rsl"></P>
+  <P ID="rsl"></P>
+  <P ID="rr"></P>
+<script>
+    var x = 20;
+    var y = 25;
+    try { 
+        var rsl = u + 30;
+    document.write(rsl) }
+    catch (err) {
+        document.getElementById("rsl").innerHTML = "Error: " + err.message;
+    }
+    add = (a,b) => a+b;
+    document.getElementById("rr").innerHTML = add(10,5);
+    document.getElementById("num.rsl").innerHTML = x+y;
+    document.getElementById("str.rsl").innerHTML = String(x)+String(y)
+</script>
+</body>
+</html>
