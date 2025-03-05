@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <h1>js string methodds</h1>
+    <p id="demo">basic methods</p>
+    <script>
+        var str = "AmaZon is a jungle located in brazil";
+        document.write(str. toUpperCase());
+        document.write("<br>");
+        document.write(str. toLowerCase());
+        document.write("<br>");
+        document.write(str.startsWith('A'));
+        document.write("<br>");
+        document.write(str.startsWith('h'));
+        document.write("<br>");
+        var search = new RegExp("jungle");
+        var res = search.test(str);
+        document.write(res);
+        document.write("<br>");
+        var searching = new RegExp("waterbody");
+        var resu = searching.test(str);
+        document.write(resu);
+        document.write("<br>");    
+        document.write("<br>");        document.write("<br>");
+        document.write("LOOPS");
+        document.write("<br>");
+        for (i = 4; i < 18; i =i+2) {
+            document.write(i);
+            document.write("<br>");
+        }
+        var fruits = ["apple", "mango", "guava", "grape", "Orange" ];
+        for ( j = 0; j < fruits.length; j++) { 
+        var text = fruits[j] + "<br>";
+    document.write(text); 
+    }
+    </script>
+</body>
+</html>
