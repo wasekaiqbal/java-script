@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <h3> JSON IN JS</h3>
+    <P ID="result"></P>
+    <P ID="res"></P>
+    <script>
+        var OBJ = { name: "WASEKA", age: 15, grade: 9 };
+        var myJSON = JSON.stringify(OBJ);
+        var OBJn = JSON.parse(myJSON);
+        document.getElementById("result").innerHTML = OBJn.name;
+        function sum( num1, num2 ) {
+            return num1 + num2;
+        }
+        function average( num1, num2 ) {
+            return sum(num1, num2) / 2;
+        }
+        let numb = average(50, 50);
+        document.getElementById("res").innerHTML = numb;
+    </script>
+</body>
+</html>
