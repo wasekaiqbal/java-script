@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-color: rgb(191, 244, 246);
+        }
+        h1 {
+            border: 2.5px solid white;
+            color: rgb(101, 103, 213);
+        }
+    </style>
+</head>
+<body>
+    <h1>random numbers</h1>
+<p id="ran"></p>
+<p id="pp"></p>
+<p id="in"></p>
+<h1>JS switch</h1>
+<p id="ii"></p>
+<h1>lets genereate the times table of "12" using for loop</h1>
+<script>
+    
+    // Random numbers
+    
+    var ins = "refresh to generate random numbers"
+    document.getElementById("in").innerHTML = ins;
+    document.getElementById("ran").innerHTML = Math.random();
+    document.getElementById("pp").innerHTML = Math.floor(Math.random()*30);
+    
+    // switch
+
+    var month;
+    switch (new Date().getMonth()) {
+        case 0: 
+        month = "January";
+        break;
+        case 1: 
+        month = "february";
+        break;      
+        case 2: 
+        month = "March";
+        break; 
+        case 3: 
+        month = "April";
+        break;    
+         case 4: 
+        month ="May";
+        break;     
+        case 5: 
+        month = "June";
+        break;       
+        case 6: 
+        month = "July";
+        break;        
+        case 7: 
+        month = "August";
+        break;
+        case 8: 
+        month = "September";
+        break;
+        case 9: 
+        month = "October";
+        break;
+        case 10: 
+        month = "November";
+        break;
+        case 11: 
+        month = "December";
+        break;
+    }
+    document.getElementById("ii").innerHTML = "This month is the month of " + month;
+    
+    // FOR LOOP
+
+    for (var i = 12; i < 122; i =i+12) {
+            document.write(i)
+            document.write("<br>");
+        }
+</script>
+</body>
+</html>
