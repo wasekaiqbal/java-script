@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <h1>js objects and properties</h1>
+    <p id="obj"></p>
+<h1>FINDING LARGEST NUMBER WITH ARGUMENTS</h1>
+    <p id="max"></p>
+    <script>
+        var person = {
+            firstName: "waseka",
+            age: 15,
+        }
+        document.getElementById("obj").innerHTML = "I am " + person.firstName + " and I am " + person.age + "years old.";
+
+        function findMax() {
+            var i;
+            var max = 0;
+            for(i = 0; i < arguments.length; i++ ) {
+                if (arguments[i] > max) {
+                    max = arguments[i];
+                }
+            }
+            return max;
+        }
+        document.getElementById("max").innerHTML = findMax(3,4,5);
+    </script>
+</body>
+</html>
