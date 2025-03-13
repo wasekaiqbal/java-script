@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-color: rgb(147, 72, 112);
+        }
+        p {
+            background-color:rgb(239, 208, 225);
+            font-size: 50px;
+            border: 5.5px solid rgb(198, 157, 157);
+            padding: 100px 100px 100px ;
+            margin: 150px
+        }
+        h2 {
+            font-size: 60px;
+            color: rgb(239, 208, 225);
+        }
+        h1 {
+            font-size: 60px;
+            color: rgb(142, 169, 206);
+        }
+        h2::after{
+    content:"💡 ";
+}
+h2::before{
+    content:"💡";
+}
+    </style>
+</head>
+<body>
+    <b><h1><center>LET's LEARN ALL THE TIMES TABLES UPTO TEN</center></h1></b>
+    <h2><b>TIMES TABLE OF '1'</b></h2>
+    <p id="n1"></p>
+    <H2><B>TIMES TABLE OF '2'</B></H2>
+    <p id="n2"></p>
+    <H2><B>TIMES TABLE OF '3'</B></H2>
+    <p id="n3"></p>
+    <H2><B>TIMES TABLE OF '4'</B></H2>
+    <p id="n4"></p>
+    <H2><B>TIMES TABLE OF '5'</B></H2>
+    <p id="n5"></p>
+    <H2><B>TIMES TABLE OF '6'</B></H2>
+    <p id="n6"></p>
+    <H2><B>TIMES TABLE OF '7'</B></H2>
+    <p id="n7"></p>
+    <H2><B>TIMES TABLE OF '8'</B></H2>
+    <p id="n8"></p>
+    <H2><B>TIMES TABLE OF '9'</B></H2>
+    <p id="n9"></p>
+    <H2><B>TIMES TABLE OF '10'</B></H2>
+    <p id="n10"></p>
+    <script>
+        
+        var num = ""; 
+           var i = 1;
+            while ( i <= 10 ) {
+                num += " <br> The number = " + ( i * 1);
+                i++
+            }
+            document.getElementById("n1").innerHTML = num;
+
+            var num = ""; 
+           var i = 1;
+            while ( i <= 10 ) {
+                num += " <br> the number is " + ( i * 2);
+                i++
+            }
+            document.getElementById("n2").innerHTML = num;
+
+            var num = ""; 
+           var i = 1;
+            while ( i <= 10 ) {
+                num += " <br> the number is " + ( i * 3);
+                i++
+            }
+            document.getElementById("n3").innerHTML = num;
+
+            var num = ""; 
+           var i = 1;
+            while ( i <= 10 ) {
+                num += " <br> the number is " + ( i * 3);
+                i++
+            }
+            document.getElementById("n3").innerHTML = num;
+
+            var num = ""; 
+           var i = 1;
+            while ( i <= 10 ) {
+                num += " <br> the number is " + ( i * 4);
+                i++
+            }
+            document.getElementById("n4").innerHTML = num;
+
+            var num = ""; 
+           var i = 1;
+            while ( i <= 10 ) {
+                num += " <br> the number is " + ( i * 5);
+                i++
+            }
+            document.getElementById("n5").innerHTML = num;
+
+            var num = ""; 
+           var i = 1;
+            while ( i <= 10 ) {
+                num += " <br> the number is " + ( i * 6);
+                i++
+            }
+            document.getElementById("n6").innerHTML = num;
+
+            var num = ""; 
+           var i = 1;
+            while ( i <= 10 ) {
+                num += " <br> the number is " + ( i * 7);
+                i++
+            }
+            document.getElementById("n7").innerHTML = num;
+
+            var num = ""; 
+           var i = 1;
+            while ( i <= 10 ) {
+                num += " <br> the number is " + ( i * 8);
+                i++
+            }
+            document.getElementById("n8").innerHTML = num;
+
+            var num = ""; 
+           var i = 1;
+            while ( i <= 10 ) {
+                num += " <br> the number is " + ( i * 9);
+                i++
+            }
+            document.getElementById("n9").innerHTML = num;
+
+            var num = ""; 
+           var i = 1;
+            while ( i <= 10 ) {
+                num += " <br> the number is " + ( i * 10);
+                i++
+            }
+            document.getElementById("n10").innerHTML = num;
+    </script>
+</body>
+</html>
