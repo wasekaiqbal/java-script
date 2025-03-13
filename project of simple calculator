@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    body {
+        background-color: rgb(102, 52, 52);
+        font-size: 50px;
+    }
+    #plus, .mm {
+        color:antiquewhite
+    }
+    
+    p {
+        border: 5px solid rgb(164, 96, 96);
+        padding: 20px 20px 20px 20px;
+    }
+    #minus, .nm {
+        color:rgb(230, 212, 188);
+    }
+    #multi, .bm {
+        color:rgb(213, 193, 165) ;
+    }
+    #div, .vm {
+        color:rgb(180, 157, 125) ;
+    } 
+    h1 {
+        color:rgb(183, 183, 124);
+    }
+</style>
+</head>
+<body>
+    <h1><b><center>📜 SIMPLE CALCULATOR 📜 </center></b></h1>
+    <h2 class="mm"><center>Addition:</center></h2>
+    <p id="plus"></p>
+    <h2 class="nm"><center>Subtraction:</center></h2>
+    <p id="minus"></p>
+    <h2 class="bm"><center>Multiplition:</center></h2>
+    <p id="multi"></p>
+    <h2 class="vm"><center>Division:</center></h2>
+    <p id="div"></p>
+ <script>
+    var value1 = 4;
+    var value2 = 4;
+    
+    var sum = value1 + value2;
+
+    var sub = value1 - value2;
+
+    var multiply = value1 * value2;
+
+    var division = value1 / value2;
+
+document.getElementById("plus").innerHTML = "i. 4 + 4 = " + sum;
+document.getElementById("minus").innerHTML = "ii. 4 - 4 = " + sub;
+document.getElementById("multi").innerHTML = "iii. 4 * 4 = " + multiply;
+document.getElementById("div").innerHTML = "iv. 4 / 4 = " + division;
+ </script>
+</body>
+</html>
