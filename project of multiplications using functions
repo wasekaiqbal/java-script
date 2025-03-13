@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-color: rgb(203, 231, 192);
+            font-size: 50px;
+            color: rgb(64, 97, 124);
+            margin: 30px 30px;
+        }
+        h1 {
+            font-size: 50px;
+            color: aliceblue;
+        }
+        h3 {
+            font-size: 40px;
+            color: cadetblue;
+        }
+        button {
+            font-size: 35px;
+        }
+    </style>
+</head>
+<body>
+    <h1><b><center>🔢 MULTIPLICATION USING FUNCTIONS 🔢</b></h1></center>
+    <center><h3><b> 📘 50 X 100 = ?</b></h3></center>
+        <p id="mul"></p>
+        <button onclick="mymultiply()">Click to multiply</button><br><br>
+        <button onclick="myclear()">Click to clear</button>
+        <script> 
+            function mymultiplication(x, y) 
+            { 
+                return x * y
+             };
+ 
+             function mymultiply() {
+                document.getElementById("mul").innerHTML = "50 X 100 = " + mymultiplication(50,100);
+             }
+    function myclear() {
+        document.getElementById("mul").innerHTML = "";
+    }
+        </script>
+
+</body>
+</html> 
