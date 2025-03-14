@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    body {
+        background-color: rgb(70, 148, 152);
+        font-size: 40px;
+    }
+    button {
+        font-size: 30px;
+        border: 3px solid rgb(186, 204, 230);
+        padding: 15px 15px 15px 15px;
+        font-weight: bold;
+        background-color: rgb(64, 78, 73);
+        color:aliceblue;
+    }
+</style>
+</head>
+<body>
+    <h1><center>Array sorting and mapping</center></h1>
+    <p id="map"></p>  
+    <BUTTON onclick="aescending()"> PRESS FOR AESCENDIND ORDER</BUTTON> <BR><br>
+        <BUTTON onclick="descending()"> PRESS FOR DESCENDIND ORDER</BUTTON>
+    <p id="result"></p>
+    <script>
+        var num1 = [5, 15, 40, 45, 10, 20, 30, 35];
+
+        function multiply(nums) {
+            return nums * 5;
+        }
+        var myarray = num1.map(multiply);
+        document.getElementById("map").innerHTML = "The numbers multiplied by 5 are " + myarray;
+
+        document.getElementById('result').innerHTML = num1;
+        function aescending() {
+            num1.sort(function(a, b){return a - b})
+            document.getElementById('result').innerHTML = "The aescending order is " + num1;
+        }
+        function descending() {
+            num1.sort(function(a, b){return b - a})
+            document.getElementById('result').innerHTML = "The descending order is " +num1;
+        }
+    </script>
+</body>
+</html>
