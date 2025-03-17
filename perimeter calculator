@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body> 
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    body {
+        background-color: beige;
+    }
+</style>
+</head>
+<body>
+   <script>
+    var choice = prompt("Welcome to the perimeter calculator. \n Enter the given number to make your choice. \n 1.PERIMETER OF SQUARE \n 2.PERIMETER OF RECTANGLE \n 3. PERIMETER OF TRIANGLE \n 4. PERIMETER OF CIRCLE \n 5 PERIMETER OF PARALELLOGRAM"
+    );
+    
+    if (choice == '1') {
+        var l = prompt('enter the length of square')
+        var result = Number(l) + Number(l) + Number(l) + Number(l)
+        alert('the perimeter = ' + result)
+    }
+
+    if (choice == '2') {
+        var ll = prompt('enter the length of rectangle')
+        var b = prompt('enter the length of rectangle')
+        var result = Number(ll) +Number(ll) + Number(b) + Number(b)
+        alert('the perimeter = ' + result)
+    }
+
+    if (choice == '3') {
+        var h = prompt('enter the height of triangle')
+        var bb = prompt('enter the base of triangle')
+        var hy = prompt('enter the hypotenuse of triangle')
+        var result = Number(h) + Number(bb) + Number(hy) 
+        alert('the perimeter = ' + result)
+    }
+
+    if (choice == '4') {
+        var r = prompt('enter the radius of circle')
+        var result = Number(r) * 2 * 3.1416
+        alert('the perimeter = ' + result)
+    }
+
+    if (choice == '5') {
+        var hh = prompt('enter the height of paralellogram')
+        var cb = prompt('enter the base of corresponding base')
+        var result = (Number(hh) + Number(cb)) * 2
+        alert('the perimeter = ' + result)
+    }
+   </script> 
+</body>
+</html>
+</body>
+</html>
