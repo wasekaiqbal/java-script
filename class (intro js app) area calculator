@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+   <script>
+    var choice = prompt("Welcome to the area calculator. \n Enter the given number to make your choice. \n 1.AREA OF SQUARE \n2.AREA OF RECTANGLE \n 3. AREA OF TRIANGLE \n 4. Area of circle \n 5 AREA OF PARALELLOGRAM"
+    );
+    
+    if (choice == '1') {
+        var l = prompt('enter the length of square')
+        var result = Number(l) * Number(l)
+        alert('the area = ' + result)
+    }
+
+    if (choice == '2') {
+        var ll = prompt('enter the length of rectangle')
+        var b = prompt('enter the length of rectangle')
+        var result = Number(ll) * Number(b)
+        alert('the area = ' + result)
+    }
+
+    if (choice == '3') {
+        var h = prompt('enter the height of triangle')
+        var bb = prompt('enter the base of triangle')
+        var result = Number(h) * Number(bb) /2
+        alert('the area = ' + result)
+    }
+
+    if (choice == '4') {
+        var r = prompt('enter the radius of circle')
+        var result = Number(r) * Number(r) * 3.1416
+        alert('the area = ' + result)
+    }
+
+    if (choice == '5') {
+        var hh = prompt('enter the height of paralellogram')
+        var cb = prompt('enter the base of corresponding base')
+        var result = Number(hh) * Number(cb) 
+        alert('the area = ' + result)
+    }
+   </script> 
+</body>
+</html>
