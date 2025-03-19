@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <h3><b><CENTER>PALINDROME APP IN JS</CENTER></b></h3>
+
+    <script>
+        function palindrome(mystr) {
+            var input = mystr.replace(/[^A-Z0-9]/ig, "").toLowerCase();
+            var reverseinput = input.split('').reverse().join('');
+            if (input === reverseinput) {
+                document.write ("<div>" + mystr + "is a palindrome <div>")
+                }
+            else {
+                document.write("<div>" + mystr + " is not a palindrome <div>")
+            }
+            }
+            palindrome("javascript")
+    </script>
+</body>
+</html>
