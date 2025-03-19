@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #orange {
+            background-color: orange;
+        }
+        #red {
+            background-color: red;
+        }
+        #blue {
+            background-color: blue;
+        }
+        #green {
+            background-color: green;
+        }
+        #pink {
+            background-color: pink;
+        }
+        #white {
+            background-color: white;
+        }
+        #yellow {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+ 
+    <h2><center><b>CHANGING RANDOM BACKGROUND COLORS</b></center></h2>
+<button onclick="orange()">ORANGE</button> <br><br>
+<button onclick="red()">RED</button><br><br>
+<button onclick="blue()">BLUE</button><br><br>
+<button onclick="green()">GREEN</button><br><br>
+<button onclick="pink()">PINK</button><br><br>
+<button onclick="white()">WHITE</button><br><br>
+<button onclick="yellow()">YELLOW</button><br><br>
+
+<script>
+   function orange() {
+   document.body.id = "orange";
+   }
+   function red() {
+   document.body.id = "red";
+   }
+   function blue() {
+   document.body.id = "blue";
+   }
+   function green() {
+   document.body.id = "green";
+   }
+   function pink() {
+   document.body.id = "pink";
+   }
+   function white() {
+   document.body.id = "white";
+   }
+   function yellow() {
+   document.body.id = "yellow";
+   }
+</script>
+</body>
+</html>
