@@ -1,0 +1,47 @@
+<html>
+<html lang="en">
+<head>
+    <style>
+        h1{
+            color:rgb(206, 104, 104);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 50px;
+        }
+        body{
+        margin:2px 2px;
+        padding:3px 3px 3px 3px;
+        }
+        .topnav {
+            overflow:hidden;
+            background-color: rgb(230, 173, 112);
+        }
+        .topnav a{
+            float: left;
+            color: rgb(215, 76, 76);
+            text-align: center;
+            padding: 15px 15px 15px 15px;
+            text-decoration: none;
+            font-size: 30px;
+        }
+        .topnav a:hover {
+            background-color: rgb(247, 202, 130);  
+            color: rgb(175, 115, 75);
+        }
+        .topnav a.active {
+            background-color: rgb(192, 156, 50);  
+            color: rgb(159, 80, 27);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1><b><center>🍔MUNCHING PALACE🍔</center></b></h1>
+    <div class="topnav">
+        <a href="index.html">home</a>
+        <a class="active" href="about.html">about</a>
+        <a href="contactme.html">contact service</a>
+        <a href="gallery.html">menu</a>
+        <a href="locarion.html">locations</a>
+    </div>
+</body>
+</html>
