@@ -1,0 +1,25 @@
+    <DIV class="carousel-container"></DIV>
+    <img class="myslide" src="slide.jpeg" height="400px" width="600px" alt="pojela baishakh 1">
+    <img class="myslide" src="slide 1.jpeg" height="400px" width="600px" alt="pojela baishakh 2">
+    <img class="myslide" src="slide 2.jpeg" height="400px" width="600px" alt="pojela baishakh 3">
+    <img class="myslide" src="slide 3.jpeg" height="400px" width="600px" alt="pojela baishakh 4">
+
+    <script>
+        var index = 0;
+        function carousel() {
+        var i;
+        var x = document.getElementsByClassName("myslide");
+
+        for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+        }
+
+        index++;
+        if (index > x.length) {
+            index = 1;
+        }
+
+        x[index - 1].style.display = "block";
+        setTimeout(carousel, 2000)
+    }
+    carousel();
